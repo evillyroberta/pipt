@@ -1,0 +1,154 @@
+#contato {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  --espaço-- 
+  
+  
+  --espaço-- 
+  
+  
+  .custom-radio {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;
+  }
+  
+  .custom-radio input[type="radio"] {
+    display: none;
+  }
+  
+  .custom-radio label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .custom-radio label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #212529;
+    border-radius: 50%;
+    background: #212529;
+  }
+  
+  .custom-radio input[type="radio"]:checked + label:before {
+    background: #757575;
+  }
+  
+  .custom-radio label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #757575;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .custom-radio input[type="radio"]:checked + label:after {
+    opacity: 1;
+  }
+  
+  --espaço--
+  .nav nav-tabs{
+    float: right;}
+    
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .form-container {
+    width: 50%;
+    margin-right: 50px;
+  }
+  
+  .contact-info h2,
+  .form-container h2 {
+    font-size: 30px;
+  }
+  
+  .form-container input,
+  .form-container textarea,
+  .form-container p {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+  }
+  
+  label1 {
+    font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 20px auto;
+    }
+  
+    .form-container {
+      width: 100%;
+      margin: 0 auto 20px auto;
+    }
+  
+    .form-container,
+    .contact-info {
+      padding: 0 10px; 
+    }
+    .contact-info p {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+    }
+  
+    .contact-info img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  
+    .map-container {
+      margin-top: 20px;
+    }
+  }
